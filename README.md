@@ -1,6 +1,6 @@
 # hugo_test
 
-整体体验下来，就是一个用 markdown 编写静态文件的一个工具而已，速度比`vitepress`相比，快了一点
+整体体验下来，就是一个用 markdown 编写静态文件的一个工具而已，速度比`vitepress`相比，快了一点。
 
 ## win
 
@@ -176,7 +176,32 @@ D:\code\hugo_test\win\site\helloapp>dir
 
 
 
+4. 添加主题
 
+利用子模块的方式引入
+
+```shell
+git init
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+```
+
+5. 编写配置文件 `config.toml`
+
+```shell
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'ananke'
+
+```
+
+
+
+6. 运行得到一个很丑的页面
+
+
+
+7. 索然无味
 
 
 
